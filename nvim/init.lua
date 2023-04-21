@@ -19,3 +19,5 @@ end
 dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
+
+vim.api.nvim_set_keymap("i", "<C-J>", "copilot#Accept('<CR>')", { expr = true, silent = true })
